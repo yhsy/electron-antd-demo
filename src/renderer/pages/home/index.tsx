@@ -1,5 +1,8 @@
 import { getGlobal } from '../../utils/electron';
 
+import Link from 'umi/link';
+
+
 function Index() {
   return (
     <div style={{ textAlign: 'center' }}>
@@ -7,6 +10,10 @@ function Index() {
       <br />
       <br />
       <img src={require('../../assets/yay.jpg')} width='400' />
+
+      <div>
+        <Link to="/list">去列表页</Link>
+      </div>
     </div>
   );
 }

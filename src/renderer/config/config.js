@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-07 18:09:10
- * @LastEditTime: 2019-11-07 18:26:32
+ * @LastEditTime: 2019-11-07 18:34:16
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /electron-antd-demo/src/renderer/config/config.js
@@ -36,6 +36,10 @@ export default {
     {
       path: '/',
       component: './home',
+    },
+    {
+      path: '/list',
+      component: './list',
     },
   ],
 };
