@@ -1,4 +1,4 @@
-import { getGlobal } from '../utils/electron';
+import { getGlobal } from '../../utils/electron';
 
 function Index() {
   return (
@@ -6,7 +6,7 @@ function Index() {
       <h1>{ getGlobal('title') }</h1>
       <br />
       <br />
-      <img src={require('../assets/yay.jpg')} width='400' />
+      <img src={require('../../assets/yay.jpg')} width='400' />
     </div>
   );
 }

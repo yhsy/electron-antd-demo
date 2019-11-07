@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-07 18:09:10
- * @LastEditTime: 2019-11-07 18:19:59
+ * @LastEditTime: 2019-11-07 18:26:32
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /electron-antd-demo/src/renderer/config/config.js
@@ -35,7 +35,7 @@ export default {
   routes: [
     {
       path: '/',
-      component: './index',
+      component: './home',
     },
   ],
 };

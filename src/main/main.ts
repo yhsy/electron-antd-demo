@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2019-11-07 18:09:10
+ * @LastEditTime: 2019-11-07 18:25:51
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: /electron-antd-demo/src/main/main.ts
+ */
 import * as path from 'path';
 import * as url from 'url';
 import { app, BrowserWindow } from 'electron';
@@ -13,7 +21,7 @@ function createWindow() {
 
   setApplicationMenu();
 
-  global.title = 'Yay! Welcome to umi-electron-typescript!';
+  global.title = '全局标题';
 
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:8000/#/');
