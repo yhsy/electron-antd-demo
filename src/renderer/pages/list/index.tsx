@@ -39,6 +39,9 @@ const { Option } = Select;
 const { ColumnGroup, Column } = Table;
 /* Antd的UI组件-end */
 
+import styles from './index.less';
+
+
 class demoList extends Component{
   constructor(props) {
     super(props);
@@ -53,7 +56,7 @@ class demoList extends Component{
     } = this.state;
 
     return (
-      <div>
+      <div className={styles.g_box}>
         <h2>列表页</h2>
         <Row gutter={16}>
           <Col>标题:{title}</Col>
