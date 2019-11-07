@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2019-11-07 18:09:10
+ * @LastEditTime: 2019-11-07 18:19:59
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /electron-antd-demo/src/renderer/config/config.js
+ */
 const cwd = process.cwd();
 
 export default {
@@ -11,7 +19,8 @@ export default {
         antd: true,
         dva: true,
         dynamicImport: true,
-        title: 'umi-electron-typescript',
+        // 桌面应用名称
+        title: 'electron-antd-demo',
         dll: true,
         routes: {
           exclude: [],
