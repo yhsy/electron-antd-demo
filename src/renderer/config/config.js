@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-07 18:09:10
- * @LastEditTime: 2019-11-07 18:34:16
+ * @LastEditTime: 2019-11-08 10:09:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /electron-antd-demo/src/renderer/config/config.js
@@ -42,4 +42,12 @@ export default {
       component: './list',
     },
   ],
+  // 配置路径的别名
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src/renderer/'),
+      'Utils': path.resolve(__dirname, 'src/renderer/utils/'),
+      'Assets': path.resolve(__dirname, 'src/renderer/assets/'),
+    }
+  }
 };
