@@ -78,7 +78,7 @@ class demoList extends Component{
         <Row gutter={16}>
             <Link to="/">回首页</Link>
         </Row>
-        <Table dataSource={list}>
+        <Table dataSource={list} rowKey="movieId">
             <Column title="id" dataIndex="id"/>
             <Column title="movieId" dataIndex="movieId"/>
         </Table>

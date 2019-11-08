@@ -8,7 +8,7 @@ const Model = {
     effects: {
         *getBanner({payload}, {call, put}){
           const response = yield call(getBanner,payload);
-          console.log(response)
+          //   console.log(response)
           yield put({
               type: 'queryBanner',
               payload: response || []
