@@ -39,8 +39,14 @@ const { Option } = Select;
 const { ColumnGroup, Column } = Table;
 /* Antd的UI组件-end */
 
+// 自定义样式
 import styles from './index.less';
 
+// 数据层:Dva
+@connect(({ bannerList, loading }) => ({
+  list: bannerList.list,
+  loading: loading.effects['bannerList/getBanner']
+}))
 
 class demoList extends Component{
   constructor(props) {
@@ -50,10 +56,18 @@ class demoList extends Component{
     }
   }
 
+  componentDidMount(){
+    // console.log('获取Banner');
+    // 获取banner
+    this.getBanner()
+  }
+
   render(){
     const {
       title
     } = this.state;
+
+    const { list } = this.props;
 
     return (
       <div className={styles.g_box}>
@@ -64,8 +78,21 @@ class demoList extends Component{
         <Row gutter={16}>
             <Link to="/">回首页</Link>
         </Row>
+        <Table dataSource={list}>
+            <Column title="id" dataIndex="id"/>
+            <Column title="movieId" dataIndex="movieId"/>
+        </Table>
+        
       </div>
     )
+  }
+
+  // 获取Banner
+  getBanner() {
+    const { dispatch } = this.props;
+    dispatch({
+      type: 'bannerList/getBanner',
+    });
   }
   
 }

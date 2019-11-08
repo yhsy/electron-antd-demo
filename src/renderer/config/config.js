@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2019-11-07 18:09:10
- * @LastEditTime: 2019-11-08 10:20:21
+ * @LastEditTime: 2019-11-08 10:44:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /electron-antd-demo/src/renderer/config/config.js
@@ -48,5 +48,13 @@ export default {
     '@': path.resolve(__dirname, 'src/renderer/'),
     'Utils': path.resolve(__dirname, 'src/renderer/utils/'),
     'Assets': path.resolve(__dirname, 'src/renderer/assets/')
+  },
+  // 本地请求代理
+  "proxy": {
+    "/api": {
+      "target": "http://yapi.webgo.vip/mock/32/index/",
+      "changeOrigin": true,
+      "pathRewrite": { "^/api" : "" }
+    }
   }
 };
