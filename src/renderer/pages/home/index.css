@@ -1,0 +1,5 @@
+.g_box {
+  padding: 20px;
+  height: 100vh;
+  -webkit-app-region: drag;
+}

@@ -1,8 +1,8 @@
 /*
  * @Author: your name
  * @Date: 2019-11-07 18:09:10
- * @LastEditTime: 2019-11-07 18:25:51
- * @LastEditors: your name
+ * @LastEditTime: 2019-11-08 13:51:29
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /electron-antd-demo/src/main/main.ts
  */
@@ -17,6 +17,10 @@ function createWindow() {
   mainWindow = new BrowserWindow({
     height: 600,
     width: 800,
+    // 无框窗口
+    frame: false,
+    // 窗口标题栏的样式
+    titleBarStyle: 'hidden'
   });
 
   setApplicationMenu();

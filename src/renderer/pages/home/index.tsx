@@ -2,10 +2,12 @@ import { getGlobal } from '../../utils/electron';
 
 import Link from 'umi/link';
 
+import styles from './index.less'
+
 
 function Index() {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }} className={styles.g_box}>
       <h1>{ getGlobal('title') }</h1>
       <br />
       <br />
